@@ -40,6 +40,7 @@
             this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(586, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(539, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -139,11 +140,20 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter Student ID:";
             // 
+            // txtBox
+            // 
+            this.txtBox.Location = new System.Drawing.Point(239, 116);
+            this.txtBox.Name = "txtBox";
+            this.txtBox.PasswordChar = '*';
+            this.txtBox.Size = new System.Drawing.Size(175, 26);
+            this.txtBox.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 700);
+            this.ClientSize = new System.Drawing.Size(539, 700);
+            this.Controls.Add(this.txtBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -173,6 +183,7 @@
         private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBox;
     }
 }
 

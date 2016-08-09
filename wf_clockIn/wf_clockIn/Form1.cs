@@ -12,6 +12,12 @@ namespace wf_clockIn
 {
     public partial class Form1 : Form
     {
+        //private int studentID;
+        //private Calendar timeIn;
+        //private Calendar timeOut;
+
+        // search for calendar like api for C sharp
+
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +31,12 @@ namespace wf_clockIn
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("hello ");
+            sayHello();
+        }
+
+        private void sayHello()
+        {
+            MessageBox.Show(txtBox.Text);
         }
     }
 }
