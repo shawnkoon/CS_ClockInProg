@@ -21,5 +21,10 @@ namespace wf_clockIn
         {
             Application.Exit();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hello ");
+        }
     }
 }
