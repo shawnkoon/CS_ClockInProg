@@ -18,13 +18,17 @@
 
 <ol>
   <h1>Program Specification.</h1>
-  <p> Before user is able to see the program we need to load the database with all the student numbers
-   I think we need to have the admin enter all the student IDs into a text file. Then, have the program read in the 
-   file and crate the student objects. which will then be stored in the sql database. 
-  </p>
-  <p>Or we can have another form just for the <strong>administrator </strong></p>
-  <p>Let me know what you think, but we have to have a way for the administrator to enter all the 
-  student/faculty id numbers.</p>
+  <div style="color:blue;"> 
+	<p> Before user is able to see the program we need to load the database with all the student numbers
+	I think we need to have the admin enter all the student IDs into a text file. Then, have the program read in the 
+	file and crate the student objects. which will then be stored in the sql database. 
+	</p>
+	<p>Or we can have another form just for the <strong>administrator </strong></p>
+	<p>Let me know what you think, but we have to have a way for the administrator to enter all the 
+	student/faculty id numbers.</p>
+  </div>
+  
+  
   <li>User Starts Program.</li>
   <li>The Clock in Program is ready to use once opend.</li>
   <li>When the Program Exits, it update log file accordingly.</li>
