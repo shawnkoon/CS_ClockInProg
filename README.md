@@ -7,6 +7,6 @@ Clock In Program - Developed with C#, WinForm
   <li>User Starts Program.</li>
   <li>The Clock in Program is ready to use once opend.</li>
   <li>When the Program Exits, it update log file accordingly.</li>
-  <li>While Update it deletes the record of ones without log out history<li>
+  <li>While Update it deletes the record of ones without log out history</li>
   <li>Admin is able to access student/log database to modify. (Password Required)</li>
 </ul>
