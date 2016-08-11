@@ -43,6 +43,7 @@ namespace wf_clockIn
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Need to show different form that will be able to Modify the Student Database.
+            // create a new from to connect to the student database? 
         }
 
         private void logToolStripMenuItem_Click(object sender, EventArgs e)
