@@ -13,6 +13,8 @@ namespace wf_clockIn
         }
         // this is a comment 
 
+
+
         #region Group of Toolstrip menu Items.
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,7 +67,10 @@ namespace wf_clockIn
             {
                 idDisplay.Text += (""+ number);
             }
+            btnEnter.Focus();
         }// End of wrtieNumber method.
+
+
 
         #region Button Click Method group.
 
@@ -76,12 +81,11 @@ namespace wf_clockIn
             idDisplay.Text = "";
         }
         // If [Enter] button is clicked.
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnEnter_Click(object sender, EventArgs e)
         {
-            // Call studentClockIn() function. (helper method)
             studentClockIn();
         }
-
+        
         private void btn0_Click(object sender, EventArgs e)
         {
             writeNumber(0);
@@ -132,16 +136,81 @@ namespace wf_clockIn
             writeNumber(9);
         }
 
-        #endregion
 
-        private void MainClockInForm_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            MessageBox.Show("asdf");
-        }
+
+
+        #endregion
 
         private void MainClockInForm_KeyDown(object sender, KeyEventArgs e)
         {
-            MessageBox.Show("asdfadf");
+            // write the digit 0 to the idDisplay box 
+            #region Keyboard key checking 
+            if (e.KeyCode == Keys.D0 || e.KeyCode == Keys.NumPad0)
+            {
+                writeNumber(0);
+            }
+            else if(e.KeyCode == Keys.D1 || e.KeyCode == Keys.NumPad1)
+            {
+                writeNumber(1);
+            }
+            else if(e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad2)
+            {
+                writeNumber(2);
+            }
+            else if (e.KeyCode == Keys.D3 || e.KeyCode == Keys.NumPad3)
+            {
+                writeNumber(3);
+            }
+            else if (e.KeyCode == Keys.D4 || e.KeyCode == Keys.NumPad4)
+            {
+                writeNumber(4);
+            }
+            else if (e.KeyCode == Keys.D5 || e.KeyCode == Keys.NumPad5)
+            {
+                writeNumber(5);
+            }
+            else if (e.KeyCode == Keys.D6 || e.KeyCode == Keys.NumPad6)
+            {
+                writeNumber(6);
+            }
+            else if (e.KeyCode == Keys.D7 || e.KeyCode == Keys.NumPad7)
+            {
+                writeNumber(7);
+            }
+            else if (e.KeyCode == Keys.D8 || e.KeyCode == Keys.NumPad8)
+            {
+                writeNumber(8);
+            }
+            else if (e.KeyCode == Keys.D9 || e.KeyCode == Keys.NumPad9)
+            {
+                writeNumber(9);
+            }
+            else if (e.KeyCode == Keys.Back)
+            {
+                deleteNumber();
+            }
+            else if(e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
+            {
+                studentClockIn();
+            }
+            
+
+            #endregion
+            // do the same for the other digits
+
         }
-    }
+        private void deleteNumber()
+        {
+            // edge case
+            if(idDisplay.Text.Length > 0)
+            {
+                string str = idDisplay.Text;
+              
+                str = str.Substring(0, str.Length - 1);
+                idDisplay.Text = str;
+            }
+        }
+
+        
+    }//main 
 }
