@@ -76,11 +76,11 @@ namespace wf_clockIn
             idDisplay.Text = "";
         }
         // If [Enter] button is clicked.
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnEnter_Click(object sender, EventArgs e)
         {
-            // Call studentClockIn() function. (helper method)
             studentClockIn();
         }
+
 
         private void btn0_Click(object sender, EventArgs e)
         {
@@ -132,6 +132,77 @@ namespace wf_clockIn
             writeNumber(9);
         }
 
+
+
+
         #endregion
-    }
+
+        private void MainClockInForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            // write the digit 0 to the idDisplay box 
+            #region Keyboard key checking 
+            if (e.KeyCode == Keys.D0)
+            {
+                writeNumber(0);
+            }
+            else if(e.KeyCode == Keys.D1)
+            {
+                writeNumber(1);
+            }
+            else if(e.KeyCode == Keys.D2)
+            {
+                writeNumber(2);
+            }
+            else if (e.KeyCode == Keys.D3)
+            {
+                writeNumber(3);
+            }
+            else if (e.KeyCode == Keys.D4)
+            {
+                writeNumber(4);
+            }
+            else if (e.KeyCode == Keys.D5)
+            {
+                writeNumber(5);
+            }
+            else if (e.KeyCode == Keys.D6)
+            {
+                writeNumber(6);
+            }
+            else if (e.KeyCode == Keys.D7)
+            {
+                writeNumber(7);
+            }
+            else if (e.KeyCode == Keys.D8)
+            {
+                writeNumber(8);
+            }
+            else if (e.KeyCode == Keys.D9)
+            {
+                writeNumber(9);
+            }
+            else if (e.KeyCode == Keys.Back)
+            {
+                deleteNumber();
+            }
+            #endregion
+
+
+            // do the same for the other digits
+
+        }
+        private void deleteNumber()
+        {
+            // edge case
+            if(idDisplay.Text.Length > 0)
+            {
+                string str = idDisplay.Text;
+              
+                str = str.Substring(0, str.Length - 1);
+                idDisplay.Text = str;
+            }
+        }
+
+        
+    }//main 
 }
