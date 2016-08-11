@@ -133,5 +133,15 @@ namespace wf_clockIn
         }
 
         #endregion
+
+        private void MainClockInForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MessageBox.Show("asdf");
+        }
+
+        private void MainClockInForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show("asdfadf");
+        }
     }
 }
