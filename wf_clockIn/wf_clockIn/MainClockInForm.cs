@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace wf_clockIn
 {
-    public partial class MainCalculatorForm : Form
+    public partial class MainClockInForm : Form
     {
-        public MainCalculatorForm()
+        public MainClockInForm()
         {
             InitializeComponent();
             idDisplay.Text = "";
@@ -33,7 +33,7 @@ namespace wf_clockIn
 
         private void aboutProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Need to show all the Contributer's Names As well as Program's version, language used and ETC...
+            // Need to show all the Contributers' Names As well as Program's version, language used and ETC...
         }
 
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
