@@ -65,7 +65,7 @@ namespace wf_clockIn
             {
                 idDisplay.Text += (""+ number);
             }
-        }
+        }// End of wrtieNumber method.
 
         #region Button Click Method group.
 
