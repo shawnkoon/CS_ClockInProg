@@ -11,7 +11,7 @@ namespace wf_clockIn
             idDisplay.Text = "";
             idDisplay.MaxLength = 10; // Recommanded. If more needed, Please Widen the idDisplay box.
         }
-        
+        // this is a comment 
 
         #region Group of Toolstrip menu Items.
 
