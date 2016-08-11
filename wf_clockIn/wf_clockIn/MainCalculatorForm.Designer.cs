@@ -316,14 +316,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(188)))), ((int)(((byte)(5)))));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(203)))), ((int)(((byte)(67)))));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 41F);
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.textBox1.Location = new System.Drawing.Point(34, 60);
+            this.textBox1.Location = new System.Drawing.Point(11, 58);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 62);
+            this.textBox1.Size = new System.Drawing.Size(340, 69);
             this.textBox1.TabIndex = 13;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MainCalculatorForm
             // 
