@@ -24,8 +24,10 @@ namespace wf_clockIn
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Need to show help message about how to use the program.
-            // ex) MessageBox.show("Hello! welcome to .... \nThis is how to use....","The title of the message box");
+            MessageBox.Show("Welcome to Student/Faculty clocking program\n"+ 
+                            "How to use the program: \nAdmin has to enter all sduent/faculty IDs before starting the program\n"+
+                            "Enter your Student/Faculty ID and press enter. If you are in the\n"+
+                            "database you will be able to login", "Instructions");
         }
 
         private void saveExitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -35,6 +37,8 @@ namespace wf_clockIn
 
         private void aboutProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Contributers: Darci Khey, Shawn Koon\n"+
+                "Languages used: C#, SQL\nVersion 1.0", "About program");
             // Need to show all the Contributers' Names As well as Program's version, language used and ETC...
         }
 

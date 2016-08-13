@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StudentQueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentQueryForm.Designer.cs">
+      <DependentUpon>StudentQueryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainClockInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="StudentQueryForm.resx">
+      <DependentUpon>StudentQueryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainClockInForm.resx">
       <DependentUpon>MainClockInForm.cs</DependentUpon>
     </EmbeddedResource>
