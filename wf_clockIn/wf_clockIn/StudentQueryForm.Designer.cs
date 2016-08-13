@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddOne = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnAddCSV = new System.Windows.Forms.Button();
+            this.btnUpdateStudent = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnQuery = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAddOne
             // 
-            this.button1.Location = new System.Drawing.Point(12, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add One by One";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddOne.Location = new System.Drawing.Point(12, 49);
+            this.btnAddOne.Name = "btnAddOne";
+            this.btnAddOne.Size = new System.Drawing.Size(125, 50);
+            this.btnAddOne.TabIndex = 0;
+            this.btnAddOne.Text = "Add One by One";
+            this.btnAddOne.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
@@ -54,41 +54,41 @@
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
-            // button2
+            // btnAddCSV
             // 
-            this.button2.Location = new System.Drawing.Point(12, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 50);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add from CSV";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddCSV.Location = new System.Drawing.Point(12, 105);
+            this.btnAddCSV.Name = "btnAddCSV";
+            this.btnAddCSV.Size = new System.Drawing.Size(125, 50);
+            this.btnAddCSV.TabIndex = 2;
+            this.btnAddCSV.Text = "Add from CSV";
+            this.btnAddCSV.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnUpdateStudent
             // 
-            this.button3.Location = new System.Drawing.Point(12, 161);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 50);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Update Student by One";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUpdateStudent.Location = new System.Drawing.Point(12, 161);
+            this.btnUpdateStudent.Name = "btnUpdateStudent";
+            this.btnUpdateStudent.Size = new System.Drawing.Size(125, 50);
+            this.btnUpdateStudent.TabIndex = 3;
+            this.btnUpdateStudent.Text = "Update Student by One";
+            this.btnUpdateStudent.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnDelete
             // 
-            this.button4.Location = new System.Drawing.Point(12, 217);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 50);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Delete Student";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(12, 217);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(125, 50);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete Student";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnQuery
             // 
-            this.button5.Location = new System.Drawing.Point(12, 273);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 56);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Query Database";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnQuery.Location = new System.Drawing.Point(12, 273);
+            this.btnQuery.Name = "btnQuery";
+            this.btnQuery.Size = new System.Drawing.Size(125, 56);
+            this.btnQuery.TabIndex = 5;
+            this.btnQuery.Text = "Query Database";
+            this.btnQuery.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -106,12 +106,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 514);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnQuery);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdateStudent);
+            this.Controls.Add(this.btnAddCSV);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddOne);
             this.Name = "StudentQueryForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -122,11 +122,11 @@
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddCSV;
+        private System.Windows.Forms.Button btnUpdateStudent;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnQuery;
+        private System.Windows.Forms.Button btnAddOne;
         private System.Windows.Forms.Label label1;
     }
 }
